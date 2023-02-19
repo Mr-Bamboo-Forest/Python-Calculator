@@ -18,6 +18,5 @@ def calculator():
             print(result)
         except:
             # Print an error message if the input is invalid
-            print("Invalid input, please try again.")
-            
+            print("Invalid input, please try again.")    
 calculator()
