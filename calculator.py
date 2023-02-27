@@ -22,9 +22,11 @@ def calculator():
         if user_input == 'log':
             user_input_log = input("Enter x of log: ")
             user_input_base = input("Enter base of log: ")
-            log_int = int(user_input_log)
-            log_int_2 = int(user_input_base)
-            log_answer = math.log(log_int, log_int_2)
-            print(log_answer)
-             
+            try:
+                log_int = int(user_input_log)
+                log_int_2 = int(user_input_base)
+                log_answer = math.log(log_int, log_int_2)
+                print(log_answer)
+            except:
+                print("Not a Number")
 calculator()
