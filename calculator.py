@@ -20,6 +20,11 @@ def calculator():
                 # Print an error message if the input is invalid
                 print("Invalid input, please try again.")
         if user_input == 'log':
-            math.log(1)
+            user_input_log = input("Enter x of log: ")
+            user_input_base = input("Enter base of log: ")
+            log_int = int(user_input_log)
+            log_int_2 = int(user_input_base)
+            log_answer = math.log(log_int, log_int_2)
+            print(log_answer)
              
 calculator()
