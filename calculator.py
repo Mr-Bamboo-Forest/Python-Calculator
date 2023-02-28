@@ -45,4 +45,13 @@ def calculator():
                 print(user_sine_solve)
             except: 
                 print('Invalid input, please try again.')
+        #tangent
+        if user_input == 'tan': 
+            user_tan_input1 = input('Enter tan value: ')
+            try: 
+                user_tan_input = int(user_tan_input1)
+                user_tan_solve = math.tan(user_tan_input)
+                print(user_tan_solve)
+            except:
+                print('Invalid input, please try again.')
 calculator()
