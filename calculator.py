@@ -53,5 +53,5 @@ def calculator():
                 user_tan_solve = math.tan(user_tan_input)
                 print(user_tan_solve)
             except:
-                
+                print('Invalid input, please try again.')                
 calculator()
