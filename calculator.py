@@ -8,6 +8,9 @@ def calculator():
         #pi
         if user_input == 'pi':
             print(math.pi)
+        #e 
+        if user_input == 'e':
+            print(math.e)
         #math
         if user_input == 'math':
             math_question = input("Enter a math question (2+1, 10/2, 3-2, 3*5):")
