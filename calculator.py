@@ -26,7 +26,7 @@ def calculator():
             try:
                 log_int = int(user_input_log)
                 log_int_2 = int(user_input_base)
-                log_answer = math.log(log_int, log_int_2)
+                log_answer = math.log(log_int, log_int_2) 
                 print(log_answer)
             except:
                 print("Invalid input, please try again.")
