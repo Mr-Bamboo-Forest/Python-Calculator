@@ -1,7 +1,7 @@
 import math
 def calculator():
     while True:
-        user_input = input("Enter a type of maths (math, log, cos, sin, tan) or type exit to exit: ")
+        user_input = input("Enter a type of maths (math, log, cos, sin, tan, factorial) or type exit to exit: ")
         #exit
         if user_input == 'exit':
             break
@@ -56,5 +56,14 @@ def calculator():
                 user_tan_solve = math.tan(user_tan_input)
                 print(user_tan_solve)
             except:
-                print('Invalid input, please try again.')                
+                print('Invalid input, please try again.')    
+        #factorial 
+        if user_input == 'factorial':
+            user_input_tan = input('Enter a factorial value: ')
+            try: 
+                user_factorial_number = int(user_input_tan)
+                user_factorial_solve = math.factorial(user_factorial_number)
+                print(user_factorial_solve)
+            except: 
+                print("your gay")
 calculator()
