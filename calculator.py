@@ -1,7 +1,7 @@
 import math
 def calculator():
     while True:
-        user_input = input("Enter a type of maths (math, log, cos, sin, tan, factorial) or type exit to exit: ")
+        user_input = input("Enter a type of maths (general, log, cos, sin, tan, factorial) or type exit to exit: ")
         #exit
         if user_input == 'exit':
             break
@@ -11,8 +11,8 @@ def calculator():
         #e 
         if user_input == 'e':
             print(math.e)
-        #math
-        if user_input == 'math':
+        #general
+        if user_input == 'general':
             math_question = input("Enter a math question (2+1, 10/2, 3-2, 3*5):")
             try:
                 result = eval(math_question)
@@ -21,8 +21,8 @@ def calculator():
                 print("Invalid input, please try again.")
         #logarithms
         if user_input == 'log':
-            user_input_log = input("Enter x of log: ")
             user_input_base = input("Enter base of log: ")
+            user_input_log = input("Enter x of log: ")
             try:
                 log_int = int(user_input_log)
                 log_int_2 = int(user_input_base)
@@ -65,5 +65,5 @@ def calculator():
                 user_factorial_solve = math.factorial(user_factorial_number)
                 print(user_factorial_solve)
             except: 
-                print("your gay")
+                print('Invalid input, please try again.')
 calculator()
